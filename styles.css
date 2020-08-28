@@ -1,26 +1,41 @@
 /* Conditional for responsive */
 
 @media only screen and (max-width: 600px) {
-	.container {
-		width: 100vh;
-		height: auto;
-	}
-	p {
+
+	html, body {
 		font-size: 11px;
+		max-width: 100%;
 	}
 
-	a {
+	body img {
+		max-width: 90%;
+	}
+
+	body a {
 		background: none;
 		text-decoration: underline;
 		text-decoration-style: wavy;
-		color: #F92672;
+		text-decoration-color: #F92672;
 	}
 
-	.job h2 {
-		font-size: 18px;
+	body .container {
+		max-width: 100%;
+		padding: 2em 1em 2em;
+		margin: 1em;
 	}
 
-}
+	body .left-container {
+		margin: 1em;
+	}
+
+	body .right-container {
+		margin: 1em;
+	}
+
+	body div.arrow{
+		display: none
+	}
+} 
 
 /* Base Styles */
 
@@ -43,7 +58,7 @@ p {
   font-style: normal;
   font-weight: normal;
   margin: .2em;
-  font-size: 30px;
+  font-size: 2em;
   font-family: 'Georgia', serif;
   color: #606060;
   line-height: 1.5em;
@@ -99,6 +114,7 @@ div.arrow{
 	position: absolute;
 	right: 2em;
 	bottom: 3em;
+	z-index: 99;
 }
 
 .arrow p {
@@ -195,12 +211,56 @@ div.arrow{
   display: flex;
   height: 100vh;
   flex-basis: 100%;
-  flex-wrap: column wrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   padding: 1em 4em 1em;
   position: relative;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+
+}
+
+.container:target {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .left-container {
@@ -219,31 +279,4 @@ div.arrow{
   justify-content: center;
   align-content: center;
   position: relative;
-}
-
-/* Button */
-.button {
-  color: #fff;
-  padding: 16px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-
-}
-
-.button {
-  background-color: #5CDB95; 
-  color: #fff; 
-  border: 2px solid #fff;
-  border-radius: 6px;
-}
-
-.button:hover {
-  background-color: #fff;
-  color: #5CDB95;
-  border-radius: 6px;
-  transition-duration: .5s;
 }
