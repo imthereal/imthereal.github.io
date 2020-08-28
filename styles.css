@@ -165,8 +165,7 @@ div.arrow{
   overflow: hidden;
   position: fixed;
   top: 0em;
-  z-index: -1;
-  background: #fff;
+  z-index: 100;
 }
 
 .topnav a {
@@ -201,7 +200,7 @@ div.arrow{
   justify-content: center;
   align-content: center;
   padding: 1em 4em 1em;
-  position: static;
+  position: relative;
 }
 
 .left-container {
