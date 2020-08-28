@@ -1,5 +1,29 @@
+/* Conditional for responsive */
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 100vh;
+		height: auto;
+	}
+	p {
+		font-size: 11px;
+	}
+
+	a {
+		background: none;
+		text-decoration: underline;
+		text-decoration-style: wavy;
+		color: #F92672;
+	}
+
+	.job h2 {
+		font-size: 18px;
+	}
+
+}
 
 /* Base Styles */
+
 body {
   background-color: #fff;
 }
@@ -172,12 +196,12 @@ div.arrow{
   display: flex;
   height: 100vh;
   flex-basis: 100%;
-  flex-wrap: wrap;
+  flex-wrap: column wrap;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  margin: 1em 4em 1em;
-  position: relative;
+  padding: 1em 4em 1em;
+  position: static;
 }
 
 .left-container {
@@ -186,6 +210,7 @@ div.arrow{
   flex: 5;
   justify-content: center;
   align-content: center;
+  position: relative;
 }
 
 .right-container {
@@ -194,6 +219,7 @@ div.arrow{
   padding-left: 1em;
   justify-content: center;
   align-content: center;
+  position: relative;
 }
 
 /* Button */
