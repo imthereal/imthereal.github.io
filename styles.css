@@ -1,20 +1,114 @@
 
 body {
-  background-color: #5CDB95;
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
-  color: #fff;
-  padding: 10%;
+  background-color: #fff;
 }
 
 h1 {
-  font-weight: 500;
-  font-size: 45px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4.1em;
+  line-height: 1.25em;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  color: #000;
+
 }
 
 p {
-  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: 'Georgia', serif;
+  color: #606060;
+  line-height: 1.5em;
+
 }
 
+a {
+  color: #606060;
+  padding-bottom: 1em;
+  background: url("./icons/wave.svg");
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 28px .3em; 
+  background-position: .5em .5em;
+  animation: move 15s linear infinite;
+  -webkit-animation: move 15s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  animation-play-state: running;
+}
+
+
+@-webkit-keyframes move {
+from {
+    background-position: 2px 1em;
+  }
+  to {
+    background-position: 500px 1em;
+  }
+}
+
+@keyframe move {
+from {
+    background-position: 2px 1em;
+  }
+  to {
+    background-position: 500px 1em;
+  }
+}
+
+/* Nav */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #606060;
+  text-decoration: none;
+  padding: .5em;
+  font-size: 30px;
+  background: none;
+}
+
+.topnav img {
+  height: .6em;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+/* Flexbox */ 
+.container {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 5em;
+}
+
+.left-container {
+  flex: 5;
+}
+
+.right-container {
+  padding-left: 1em;
+}
+
+/* Button */
 .button {
   color: #fff;
   padding: 16px 40px;
