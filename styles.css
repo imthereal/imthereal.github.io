@@ -1,4 +1,5 @@
 
+/* Base Styles */
 body {
   background-color: #fff;
 }
@@ -10,12 +11,14 @@ h1 {
   line-height: 1.25em;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   color: #000;
+  margin: .2em;
 
 }
 
 p {
   font-style: normal;
   font-weight: normal;
+  margin: .2em;
   font-size: 30px;
   font-family: 'Georgia', serif;
   color: #606060;
@@ -65,12 +68,85 @@ from {
   }
 }
 
+div.arrow{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+	right: 2em;
+	bottom: 3em;
+}
+
+.arrow p {
+	transform: rotate(270deg);
+	margin: 0px;
+	display: flex;
+	color: #000;
+}
+
+.arrow a {
+	display: flex;
+	text-decoration: none;
+	background: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.arrow-rotate {
+	transform: rotate(180deg);
+}
+
+/* Work */
+
+.work-container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.work {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	justify-content: space-evenly;
+}
+
+.job {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+}
+
+.job h2 {
+	font-family: 'Open Sans SemiBold', 'Helvetica', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.job p {
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	padding: 0px;
+	margin: 0px;
+	color: #606060;
+}
+
 /* Nav */
 .topnav {
   overflow: hidden;
+  position: fixed;
+  top: 0em;
+  z-index: -1;
+  background: #fff;
 }
 
 .topnav a {
+  position: relative;
   float: left;
   display: block;
   color: #606060;
@@ -85,27 +161,39 @@ from {
 }
 
 .topnav-right {
+  position: relative;
   float: right;
 }
 
 
 /* Flexbox */ 
+
 .container {
   display: flex;
+  height: 100vh;
   flex-basis: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  padding: 5em;
+  margin: 1em 4em 1em;
+  position: relative;
 }
 
 .left-container {
+  display: flex;
+  flex-direction: column;
   flex: 5;
+  justify-content: center;
+  align-content: center;
 }
 
 .right-container {
+  display: flex;
+  flex-direction: column;
   padding-left: 1em;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Button */
