@@ -317,7 +317,14 @@ div.arrow{
   z-index: 99;
 }
 
+.hover_img img {
+  width: 250px;
+  height: 250px;
+}
+
 .hover_img a:hover span {
-  display:block;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
 }
 
