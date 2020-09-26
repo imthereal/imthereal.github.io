@@ -48,16 +48,31 @@
 
 /* Base Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
 }
 
 h1 {
   font-style: normal;
-  font-weight: normal;
-  font-size: 4.1em;
+  font-weight: 300;
+  font-size: 4em;
   line-height: 1.25em;
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  color: #000;
+  margin: .2em;
+
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 1.25em;
+  font-family: 'Inter', 'Helvetica', sans-serif;
   color: #000;
   margin: .2em;
 
@@ -66,16 +81,16 @@ h1 {
 p {
   font-style: normal;
   font-weight: normal;
-  margin: .2em;
-  font-size: 2em;
+  margin: .5em;
+  font-size: 1.5em;
   font-family: 'Georgia', serif;
-  color: #606060;
+  color: #282828;
   line-height: 1.5em;
 
 }
 
 a {
-  color: #606060;
+  color: #282828;
   padding-bottom: 1em;
   background: url("./icons/wave.svg");
   background-repeat: repeat;
@@ -96,7 +111,6 @@ a {
 a:hover {
   animation-play-state: running;
 }
-
 
 @-webkit-keyframes move {
 from {
@@ -167,22 +181,22 @@ div.arrow{
 }
 
 .job h2 {
-	font-family: 'Open Sans SemiBold', 'Helvetica', sans-serif;
+	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 20px;
 	padding: 0px;
 	margin: 0px;
 }
 
 .job p {
-	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1em;
+	font-size: .8em;
 	padding: 0px;
 	margin: 0px;
-	color: #606060;
+	color: #282828;
 }
 
 /* Nav */
@@ -198,7 +212,7 @@ div.arrow{
   position: relative;
   float: left;
   display: block;
-  color: #606060;
+  color: #282828;
   text-decoration: none;
   padding: .5em 1em .5em;
   font-size: 2em;
@@ -290,3 +304,20 @@ div.arrow{
   align-content: center;
   position: relative;
 }
+
+/* Fun */
+
+.hover_img a {
+  position:relative;
+}
+
+.hover_img a span {
+  position:absolute;
+  display:none;
+  z-index: 99;
+}
+
+.hover_img a:hover span {
+  display:block;
+}
+
