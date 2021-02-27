@@ -98,7 +98,7 @@ a {
   background-position-y: 0%;
   background-size: auto auto;
   background-repeat: repeat-x;
-  background-size: 28px .3em; 
+  background-size: 20px .3em; 
   background-position: .5em .5em;
   animation: move 15s linear infinite;
   -webkit-animation: move 15s linear infinite;
@@ -190,7 +190,7 @@ div.arrow{
 }
 
 .job p {
-	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-family: 'Georgia', serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: .8em;
@@ -206,6 +206,8 @@ div.arrow{
   position: fixed;
   top: 0em;
   z-index: 100;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  width: 100%;
 }
 
 .topnav a {
