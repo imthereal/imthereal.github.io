@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles.css"> 
+	<script src="canvas.js" async></script>
 	<title>audrey.html</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -9,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </style>
 <body>
+<canvas id="bg-gradient" data-js-darken-top data-transition-in></canvas>
 <div class="topnav">
 	<a href="#home">✍️</a>
 	<div class="topnav-right">
@@ -19,21 +21,15 @@
 </div>
 <div class = "container" id="home">
 		<a href="#work" id="scroll-down"><div class="arrow">
-	
-		<p>💼 👀</p>
-		<img src = "./icons/arrow.svg"/>
-	
-	</div></a>
-	<div class ="left-container">
-		<h1>Welcome to my little corner of the web! 👋 </h1>
-		
-     <div class="hover_img">
+			<p>💼 👀</p>
+			<img src = "./icons/arrow.svg"/>
+	   </div></a>
+	<div class="right-container">
+        <h1>Welcome to my little corner of the web! 👋 </h1>
+     	<div class="hover_img">
 		<p>I'm <a href="#">Audrey McNay<span><img src="./img/me.JPG" alt="Me at the beach with my dog" height="250" /></span></a>, a Content Strategist based in San Francisco.</p></div>
 		<br>
 		<p>Besides wordsmithing, I love public transit, board games, infosec, and tasting fine beers, whiskeys and teas (separately, of course).</p>
-	</div>
-	<div class = "right-container">
-		<img src="./img/bart.svg" alt="BART simplistic map">
 	</div>
 </div>
 <div class = "container" id="work">
@@ -49,28 +45,25 @@
 	<div class = "right-container">
 		<div class = "work-container">
 			<div class = "work">
-				<img src="./img/timeline.svg" alt="work timeline">
-			</div>
-			<div class = "work">
 				<div class = "job">
-					<h2 style="color:#F92672">Wealthfront</h2>
+					<h2>Wealthfront</h2>
 					<p>Senior Content Strategist</p>
 				</div>
 				<div class = "job">
-					<h2 style="color:#A6E22E">Robinhood</h2>
+					<h2>Robinhood</h2>
 					<p>Content Strategist</p>
 					<p>Rotational Product Manager</p>
 				</div>
 				<div class = "job">
-					<h2 style="color:#66D9EF">Facebook</h2>
+					<h2>Facebook</h2>
 					<p>Content Strategy Intern</p>
 				</div>
 				<div class = "job">
-					<h2 style="color:#FD971F">Applied Research Labs</h2>
+					<h2>Applied Research Labs</h2>
 					<p>Technical Writer, <i>Part-Time</i></p>
 				</div>
 				<div class = "job">
-					<h2 style="color:#AE81FF">University of Texas</h2>
+					<h2>University of Texas</h2>
 					<p>B.S., Advertising, <i>Senior Fellow</i></p>
 					<p>Minor in Rhetoric and Writing</p>
 				</div>

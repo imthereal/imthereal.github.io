@@ -25,7 +25,6 @@
 		alignment-baseline: 100%;
 		align-items: stretch;
 		align-content: top;
-		margin: 1em 0em 0em;
 	}
 
 	body .left-container {
@@ -100,7 +99,7 @@ body {
 h1 {
   font-style: normal;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 2.5em;
   line-height: 1.25em;
   font-family: 'Inter', 'Helvetica', sans-serif;
   color: #000;
@@ -111,7 +110,7 @@ h1 {
 h2 {
   font-style: normal;
   font-weight: 300;
-  font-size: 3em;
+  font-size: 1.5em;
   line-height: 1.25em;
   font-family: 'Inter', 'Helvetica', sans-serif;
   color: #000;
@@ -123,10 +122,10 @@ p {
   font-style: normal;
   font-weight: normal;
   margin: .5em;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Georgia', serif;
   color: #282828;
-  line-height: 1.5em;
+  line-height: 1em;
 
 }
 
@@ -276,12 +275,11 @@ div.arrow{
 
 .container {
   display: flex;
-  height: 100vh;
   flex-basis: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  justify-content: left;
+  align-content: left;
   margin: 0em 4em;
   position: relative;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
