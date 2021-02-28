@@ -21,18 +21,22 @@
 	}
 
 	body .container {
-		height: 100vh;
-		alignment-baseline: 100%;
-		align-items: stretch;
-		align-content: top;
+    align-content: left;
+    align-items: flex-start;
+    justify-content: left;
+
 	}
 
 	body .left-container {
 		margin: 1em;
+    justify-content: left;
+
 	}
 
 	body .right-container {
 		margin: 1em;
+    justify-content: left;
+
 	}
 
 	body div.arrow{
@@ -101,9 +105,9 @@ h1 {
   font-weight: 300;
   font-size: 2.5em;
   line-height: 1.25em;
-  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-family: 'Georgia', serif;
   color: #000;
-  margin: .2em;
+  margin-top: .2em;
 
 }
 
@@ -112,20 +116,19 @@ h2 {
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1.25em;
-  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-family: 'Georgia', serif;
   color: #000;
-  margin: .2em;
+  margin-top: .2em;
 
 }
 
 p {
   font-style: normal;
-  font-weight: normal;
-  margin: .5em;
-  font-size: 1em;
-  font-family: 'Georgia', serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  font-family: 'Inter', 'Helvetica', sans-serif;
   color: #282828;
-  line-height: 1em;
+  line-height: 1.5em;
 
 }
 
@@ -211,7 +214,7 @@ div.arrow{
 	display: flex;
 	flex-direction: column;
 	margin: 1em;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .job {
@@ -221,7 +224,7 @@ div.arrow{
 }
 
 .job h2 {
-	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-family: 'Georgia', serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -230,7 +233,7 @@ div.arrow{
 }
 
 .job p {
-	font-family: 'Georgia', serif;
+	font-family: 'Inter', 'Helvetica', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: .8em;
@@ -275,11 +278,12 @@ div.arrow{
 
 .container {
   display: flex;
+  width: 90%;
+  height: 250px;
   flex-basis: 100%;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: left;
-  align-content: left;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
   margin: 0em 4em;
   position: relative;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -329,21 +333,15 @@ div.arrow{
 }
 
 .left-container {
-  display: flex;
-  flex-direction: column;
-  flex: 5;
-  justify-content: center;
-  align-content: center;
+  flex: 3;
   position: relative;
+  margin: 1em;
 }
 
 .right-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-  justify-content: center;
-  align-content: center;
+  flex: 2;
   position: relative;
+  margin: 1em;
 }
 
 /* Fun */
